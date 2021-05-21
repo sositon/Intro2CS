@@ -1,0 +1,79 @@
+Description:
+Constants:
+Options of editing the wav files:
+SOUND_REVERSE = 1 - if the user choice is 1 the function reverses the sound
+SOUND_NEGATE = 2 - if the user choice is 2 the function negatives the sound
+SOUND_ACCELERATE = 3 - if the user choice is 3 the function accelerates the sound
+SOUND_SLOW = 4 - if the user choice is 4 the function slows the sound
+SOUND_AMPLIFY = 5 - if the user choice is 5 the function amplifies the sound
+SOUND_REDUCE = 6 - if the user choice is 6 the function reduces the sound
+SOUND_DIM = if the user choice is 7 the function dims the sound
+EXIT_EDIT_MENU = if the user choice is 8 the function exits the program
+
+LEFT_CHANNEL = 0 – present the first place in list of audio list.
+RIGHT_CHANNEL = 1 - present the second place in list of audio list.
+MIN_VOLUME = -32768 – present the minimum volume according to the instructions of the exercise.
+MAX_VOLUME = 32767 – present the maximum volume according to the instructions of the exercise.
+SAMPLE_RATE = 2000 – present the sample rate as according to the instructions of the exercise.
+SILENCE = 'Q' – for quiet the user enters the char ‘Q’ and the value of all relevant samples will always be 0.
+
+Options for the main menu of the program:
+EDIT_MENU = 1 - if the user choice is 1 the function will give him the option
+to edit the audio files.
+COMPOSING_MENU = 2 - if the user choice is 2 the function will give him the
+option
+ to compose a melody.
+END_MENU = 3 - if the user choice is 3 the function will give him the option to
+
+save the changes and exit the program.
+
+
+Functions:
+sound_reverse: parameters: data_list - the audio data that displayed as a list of lists.
+               return: Audio reversal list (list of lists).
+sound_negate: parameters: data_list - the audio data that displayed as a list of lists.
+              return: Audio negative list (list of lists).
+sound_accelerate: parameters: data_list - the audio data that displayed as a list of lists.
+                  return: Audio speed acceleration list (list of lists).
+sound_slow: parameters: data_list - the audio data that displayed as a list of lists.
+            return: Audio deceleration list (list of lists).
+sound_amplify: parameters: data_list - the audio data that displayed as a list of lists.
+               return: A list representing the increase in volume (list of lists).
+sound_reduce: parameters: data_list - the audio data that displayed as a list of lists.
+              return: A list representing the volume reduction (list of lists).
+average: parameters: this function gets numbers.
+         return: average
+sound_dim: parameters: data_list - the audio data that displayed as a list of lists.
+           return: A list representing the dimming filter (list of lists).
+read_composition_file: parameters: comp_file_name - text file that the user enters to the program
+                       return: list with all the data of the text file.
+
+edit_menu : parameter: wave_file – the function gets wave file and present to the user edit menu for the enter file.
+In addition, the function displays an appropriate message if the edit was successful and what type of edit it was.
+
+list_of_tuples : parameters: lst – the function gets list and convert the list to list of tuples.
+                 return: list of tuples.
+
+ask_for_composition_file: the function gets a file name from the user and the
+instructions for
+composing a melody. If the file doesn’t exist, the function prints fit message to the user.
+return: composing file name
+
+composing_menu: parameters: data_list - the audio data that displayed as a list of lists.
+If a proper composition instructions file is received,
+the program will create a list with the composed melody and then lead to the edit menu.
+
+ask_for_wave_file: the function ask from the user to enter file name and load
+the file.
+If the input is invalid the function, ask from the user to try again.
+return: the function returns the load wave file.
+
+check_input: parameters: choice – this function check if the input the user enter is valid.
+             return: the function returns true if the input is valid, else the function returns false.
+
+end_menu: parameters: sample_rate , data_list – this function saves the file in the name file chosen by the user.
+
+main_menu: this function is the main function in the program, as long as the user does not choose to stop the program,
+the program will offer him an option from the menu.
+
+
