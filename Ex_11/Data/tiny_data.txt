@@ -1,0 +1,6 @@
+influenza cough fatigue headache nausea
+meningitis headache fever irritability rigidity
+healthy 
+mono fatigue sore_throat headache
+cold cough headache
+strep sore_throat fever
