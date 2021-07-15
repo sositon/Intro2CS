@@ -1,0 +1,28 @@
+In‪ our execution of the Boggle game, we've added some extra functionalities
+to make the game more exiting and user friendly.
+The following sections will describe the additional features we've added:‬
+
+‪Winning the game - In our execution it is possible to win the game.
+If a user finds all the valid words within the board, before the time runs out,
+the game will stop and show a winning message to the player.
+Finding all the valid words doesn't necessarily mean that the user received the max possible amount of points.
+It might be possible to find the same words in different lengths of paths.‬
+
+‪Lives - In our execution a user can guess non-valid words only a certain amount of times.
+The user is starting the game with a default amount of lives,
+and each time that the user will guess a word that is not in the valid words list, the user will lose one life.
+When the user will get to 0 lives, the game will stop and show a game-over message to the user.
+The lives are visually represented on the game by symbols of red hearts in the main screen.‬
+
+‪Quit game - In our execution a user can quit and close the game anytime in an easy way.
+A specific button that closes the game is clearly located on the main board.   ‬
+
+‪Game messages - In our execution the user will get messages according to the situation of the game.
+The game will tell the user when a non-valid word was inserted.
+The game will also tell the user when a valid word was inserted and what is the amount of points the user gained because of it.  ‬
+
+‪Hints - In our execution a user can also ask for a hint.
+A specific button for hints is placed on the main board, but can be pressed only when no letters have been inserted.
+The hint will search for a valid word that hasn't been inserted yet,
+and will change the color of the first letter for a short time.
+In this way the user will be able to see the first letter of the word and try to guess the rest of it.        ‬
